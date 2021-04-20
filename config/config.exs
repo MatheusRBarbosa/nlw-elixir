@@ -10,6 +10,10 @@ use Mix.Config
 config :nlwelixir,
   ecto_repos: [Nlwelixir.Repo]
 
+config :nlwelixir, Nlwelixir.Repo,
+  migration_primary_key: [type: :binary_id],
+  migration_foreign_key: [type: :binary_id]
+
 # Configures the endpoint
 config :nlwelixir, NlwelixirWeb.Endpoint,
   url: [host: "localhost"],
