@@ -17,7 +17,11 @@ defmodule NlwelixirWeb.ErrorView do
   end
 
   def render("error.json", %{result: %Changeset{} = changeset}) do
-    %{message: translate_errors(changeset)}
+    %{error: translate_errors(changeset)}
+  end
+
+  def render("error.json", %{result: result}) do
+    %{error: result}
   end
 
   defp translate_errors(changeset) do

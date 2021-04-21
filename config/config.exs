@@ -14,6 +14,8 @@ config :nlwelixir, Nlwelixir.Repo,
   migration_primary_key: [type: :binary_id],
   migration_foreign_key: [type: :binary_id]
 
+config :nlwelixir, Nlwelixir.Mailer, adapter: Bamboo.LocalAdapterd
+
 # Configures the endpoint
 config :nlwelixir, NlwelixirWeb.Endpoint,
   url: [host: "localhost"],

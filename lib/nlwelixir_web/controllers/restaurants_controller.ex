@@ -1,8 +1,8 @@
 defmodule NlwelixirWeb.RestaurantsController do
   use NlwelixirWeb, :controller
 
-  alias Nlwelixir.Restaurant
   alias Nlwelixir.FallbackController
+  alias Nlwelixir.Restaurant
 
   action_fallback FallbackController
 

@@ -12,6 +12,8 @@ config :nlwelixir, Nlwelixir.Repo,
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
 
+config :nlwelixir, Nlwelixir.Mailer, adapter: Bamboo.TestAdapter
+
 # We don't run a server during test. If one is required,
 # you can enable the server option below.
 config :nlwelixir, NlwelixirWeb.Endpoint,
