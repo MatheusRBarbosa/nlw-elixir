@@ -8,7 +8,7 @@ defmodule Nlwelixir.Supplies.ExpirationNotification do
     Enum.each(data, fn {to_email, supplies} ->
       to_email
       |> ExpirationEmail.create(supplies)
-      |> Mailer.deliv(er_later!())
+      |> Mailer.deliver_later!()
     end)
   end
 end
