@@ -32,6 +32,6 @@ defmodule NlwelixirWeb.Router do
   end
 
   if Mix.env() == :dev do
-    foward("/sent_emails", Bamboo.SentEmailViewerPlug)
+    forward "/sent_emails", Bamboo.SentEmailViewerPlug
   end
 end

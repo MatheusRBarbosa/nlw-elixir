@@ -14,9 +14,10 @@ defmodule Nlwelixir.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: Nlwelixir.PubSub},
       # Start the Endpoint (http/https)
-      NlwelixirWeb.Endpoint
+      NlwelixirWeb.Endpoint,
       # Start a worker by calling: Nlwelixir.Worker.start_link(arg)
       # {Nlwelixir.Worker, arg}
+      Nlwelixir.Supplies.Scheduler
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
